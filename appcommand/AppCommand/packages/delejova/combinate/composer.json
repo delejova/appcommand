@@ -1,0 +1,11 @@
+{
+    "name": "delejova/combinate",
+    "authors": [
+        {
+            "name": "delejova",
+            "email": "domin.delejova@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
