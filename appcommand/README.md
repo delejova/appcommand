@@ -1,32 +1,32 @@
-Laravel Framework v5.4.36
+Laravel Framework
 
 Aplikácia, ktorá pridá nový Command spustiteľný cez Artisan.
 Zo série vstupných argumentov (stringov) vypíše všetky kombinácie dvojíc bez opakovania.
 
 
-Príkaz na spustenie commandu v konzole:
+**Príkaz** na spustenie commandu v konzole:
 
 php artisan combinate:string arg1 arg2 arg3
 
 
-Vstup: Argumentami je ľubovoľný počet slov (string). 
+**Vstup**: Argumentami je ľubovoľný počet slov (string). 
 
 Ošetrené sú hraničné situácie pre zadanie malého množstva stringov, kvôli ktorým nebude možné dvojicu vytvoriť.
 
 
-Kód pre command sa nachádza v package:
+*Kód pre command sa nachádza v package:*
 
 AppCommand\packages\delejova\combinate\src\Console\Commands\Combination.php
 
 
-Použitý algoritmus vytvárania dvojíc:
+**Použitý algoritmus vytvárania dvojíc:**
 
 Cyklus v cykle. Vezme sa prvý prvok poľa a k nemu sa priradia všetky nasledujúce (zvyšné) prvky poľa.
 vezme sa nasledujúci prvok poľa a k nemu sa priradia zvyšné. 
 Takto vznikne jedinečná kombinácia všetkých dvojíc.
 
 
-Načítanie 'packages' do novej laravel aplikácie:
+*Načítanie 'packages' do novej laravel aplikácie:*
 
 1. Prekopírovať 'packages' do novej laravel aplikácie.
 
